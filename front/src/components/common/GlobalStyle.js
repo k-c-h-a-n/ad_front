@@ -19,6 +19,7 @@ const GlobalStyle = () => {
     <MobileView>
       <TopBar></TopBar>
       this is mobile
+      
     </MobileView>
   </GlobalStyle_Container>
   )
