@@ -10,12 +10,12 @@ import {
     isMobile
   } from "react-device-detect";
 
-const TopBar = () => {
+const TopBar = ({header}) => {
     return (
         <>
             <TopbarContainer>
                 <TopbarTitle>
-                    tentative
+                    {header}
                     <Title_Right>
                         <BrowserView>
                         </BrowserView>

@@ -9,15 +9,15 @@ export default props => {
         My Info
       </a>
 
-      <a className="menu-item" href="/about">
+      <a className="menu-item" href="/edit">
         Info Edit
       </a>
 
-      <a className="menu-item" href="/services">
+      <a className="menu-item" href="/manage">
         Info Manage
       </a>
 
-      <a className="menu-item" href="/contact">
+      <a className="menu-item" href="/list">
         Usage History
       </a>
 

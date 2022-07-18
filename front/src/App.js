@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { useHistory, BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { useHistory, BrowserRouter as Router, Routes, Switch, Route } from "react-router-dom";
 
 import GlobalStyle from './components/common/GlobalStyle.js';
 import { useMediaQuery } from 'react-responsive'
@@ -10,6 +10,12 @@ import {
   isBrowser,
   isMobile
 } from "react-device-detect";
+
+import Main from './page/main/Main';
+import Login from './page/login/Login';
+import Edit from './page/edit/Edit';
+import Manage from './page/manage/Manage';
+import List from './page/list/List';
 
 function App() {
 
@@ -22,7 +28,15 @@ function App() {
 
   return (
     <Router>
-      <GlobalStyle></GlobalStyle>
+      {/*<GlobalStyle></GlobalStyle>*/}
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/edit" element={<Edit />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/manage" element={<Manage />} />
+        <Route path="/list" element={<List />} />
+
+      </Routes>
     </Router>
   );
 }
